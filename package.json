@@ -30,8 +30,10 @@
   },
   "dependencies": {
     "@rbxts/maid": "^1.0.0-ts.1",
+    "@rbxts/net": "^2.1.2",
     "@rbxts/profileservice": "^1.3.0",
     "@rbxts/services": "^1.1.4",
-    "@rbxts/signal": "^1.0.3"
+    "@rbxts/signal": "^1.0.3",
+    "@rbxts/string-utils": "^1.0.2"
   }
 }

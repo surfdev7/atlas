@@ -15,9 +15,9 @@
 		"typeRoots": ["node_modules/@rbxts"],
 
 		// configurable
-		"rootDir": "source",
+		"rootDir": "src",
 		"outDir": "out",
-		"baseUrl": "source",
+		"baseUrl": "src",
 		"incremental": true,
 		"tsBuildInfoFile": "out/tsconfig.tsbuildinfo"
 	}

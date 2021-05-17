@@ -1,7 +1,6 @@
 /**
- * @file Model.ts
  * @author surfdev7
- * @date 4/27/2021
+ * @description basic utilities for Models.
  */
 
 export namespace Model {

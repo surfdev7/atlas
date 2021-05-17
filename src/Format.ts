@@ -1,7 +1,6 @@
 /**
- * @file Format.ts
  * @author surfdev7
- * @date 4/27/2021
+ * @description format utils for string and numbers.
  */
 
 function pad(num: number, size: number) {

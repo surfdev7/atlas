@@ -1,7 +1,6 @@
 /**
- * @file Motion.ts
  * @author surfdev7
- * @date 4/27/2021
+ * @description easily handles moving objects, with tween service implementation.
  */
 import { RunService, TweenService } from "@rbxts/services";
 import Signal from "@rbxts/signal";
@@ -59,7 +58,7 @@ export class Motion {
 			}
 
 			// init frame if idle.
-			if (!frame.state) {
+			if (frame.state !== undefined) {
 				// set time stamps
 				frame.start = clockTime;
 				frame.startLocation = currentTargetLocation;
@@ -107,10 +106,10 @@ export class Motion {
 	run(config?: executionConfig) {
 		// apply configs here.
 		this.frames.forEach((frame) => {
-			frame.timeLength = frame.timeLength / (config?.speedModifier || 1);
+			frame.timeLength = frame.timeLength / ((config?.speedModifier !== undefined && config?.speedModifier) || 1);
 		});
 		// TODO: use better alternative.
-		wait(config?.timeDelay || 0);
+		wait((config?.timeDelay !== undefined && config?.timeDelay) || 0);
 		if (RunService.IsServer()) {
 			// server
 			this.updater = RunService.Heartbeat.Connect((dt: number) => {

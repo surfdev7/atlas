@@ -1,7 +1,6 @@
 /**
- * @file eMath.ts
  * @author surfdev7
- * @date 4/27/2021
+ * @description 'extra' Math utilities.
  */
 
 function cloneList(list: number[]) {
