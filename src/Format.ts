@@ -1,6 +1,6 @@
 /**
  * @author surfdev7
- * @description format utils for string and numbers.
+ * @description format utils for strings and numbers.
  */
 
 function pad(num: number, size: number) {

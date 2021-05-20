@@ -42,7 +42,16 @@ export namespace eMath {
 		return sum;
 	}
 
-	const avg = statistics.mean; // same thing
+	/**
+	 * @description Returns average of provided inputs.
+	 * @param args inputs.
+	 * @returns average of all inputs.
+	 */
+	export function avg(...args: number[]): number {
+		let sum = 0;
+		args.forEach((x) => (sum += x));
+		return sum / args.size();
+	}
 
 	export namespace statistics {
 		/**

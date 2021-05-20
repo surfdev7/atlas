@@ -19,9 +19,7 @@ let transmitter:
 	| ServerSenderEvent<[request: string, netMapId: string | number, data: Map<string, unknown>]>
 	| ClientListenerEvent<[request: string, netMapId: string | number, data: Map<string, unknown>]>;
 
-let connector:
-	| ServerFunction
-	| ClientFunction<[request: "connect" | "disconnect", netMapId: string | number], undefined>;
+let connector: ServerFunction | ClientFunction<[request: "connect" | "disconnect", netMapId: string | number], unknown>;
 if (RunService.IsServer()) {
 	connector = Remotes.Server.Create("netMapConnector");
 	transmitter = Remotes.Server.Create("netMapReplicator");
