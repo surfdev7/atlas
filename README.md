@@ -4,7 +4,7 @@
 Atlas is a set of modules designed to help eliminate the repetitive aspects of Roblox Development.
 
 ## Docs
-Documentation can be found in the [docs]("./docs") directory.
+Documentation can be found in the [docs](https://github.com/surfdev7/atlas-ts-npm/tree/main/docs) directory.
 
 ## Installation
 2) Begin by installing [Roblox-TS](https://roblox-ts.com/).
