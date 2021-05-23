@@ -6,7 +6,7 @@ The __Model__ module contains basic model utilities.
 Basic examples include: welding a model to its root, calculating the mass of a model, etc...
 
 ## Usage
-```
+```typescript
 import { Model } from "@rbxts/atlas";
 ```
 

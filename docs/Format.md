@@ -5,7 +5,7 @@ __Format__ is a library used for formatting *numbers* into readable *strings*.
 
 For example: *clocks*, *speed*, *distance*, etc...
 ## Usage
-```
+```typescript
 import { Format } from "@rbxts/atlas";
 ```
 

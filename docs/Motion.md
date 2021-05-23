@@ -6,7 +6,7 @@ __Motion__ objects move *Parts* or *Models* to their targets on a frame, by fram
 These objects prove extremely versatile at accomplishing their task.
 
 ## Usage
-```
+```typescript
 import { Motion } from "@rbxts/atlas";
 ```
 

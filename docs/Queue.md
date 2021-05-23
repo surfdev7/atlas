@@ -4,12 +4,12 @@
 __Queue__ is an object allowing for __*sequential*__ processing of entries to avoid errors like *duplication*.
 
 ## Usage
-```
+```typescript
 import { Queue } from "@rbxts/atlas";
 ```
 
 ## Example
-```
+```typescript
 type entry = {
 	player: Player;
 	item: string;

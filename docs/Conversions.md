@@ -6,7 +6,7 @@ The __Conversions__ module contains basic conversion methods.
 Mostly done on the basis of *stud* to *metric* conversion.
 
 ## Usage
-```
+```typescript
 import { Conversions } from "@rbxts/atlas";
 ```
 

@@ -3,7 +3,7 @@
 ## Description
 __eMath__ (extended math) contains useful methods not defined in the default *Math* library.
 ## Usage
-```
+```typescript
 import { eMath } from "@rbxts/atlas";
 ```
 
