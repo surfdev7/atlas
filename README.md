@@ -4,7 +4,7 @@
 Atlas is a set of modules designed to help eliminate the repetitive aspects of Roblox Development.
 
 ## Docs
-[Atlas-TS Documentation (coming soon)]()
+Documentation can be found in the [docs]("./docs") directory.
 
 ## Installation
 2) Begin by installing [Roblox-TS](https://roblox-ts.com/).
@@ -23,7 +23,8 @@ import { <module> } from "@rbxts/atlas"
 ## Dependencies
 
 ## Contributing
+Something we missed? Just want to contribute?
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+Written with ❤️️ by @surfdev7.
