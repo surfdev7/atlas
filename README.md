@@ -21,6 +21,10 @@ import { <module> } from "@rbxts/atlas"
 
 
 ## Dependencies
+- @rbxts/net
+- @rbxts/services
+- @rbxts/signal
+- @rbxts/string-utils
 
 ## Contributing
 Something we missed? Just want to contribute?
