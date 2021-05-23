@@ -10,8 +10,12 @@ import { NetMap } from "./NetMap";
 
 import { Time } from "./Time";
 
+import Queue from "./Queue";
+
+import Conversions from "./Conversions";
+
 declare namespace atlas {
-	export { eMath, Format, Model, Motion, NetMap, Time };
+	export { eMath, Format, Model, Motion, NetMap, Time, Queue, Conversions };
 }
 
-export = { eMath, Format, Model, Motion, NetMap, Time };
+export = { eMath, Format, Model, Motion, NetMap, Time, Queue, Conversions };
