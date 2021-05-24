@@ -1,6 +1,5 @@
 # Format
 
-## Description
 __Format__ is a library used for formatting *numbers* into readable *strings*.
 
 For example: *clocks*, *speed*, *distance*, etc...

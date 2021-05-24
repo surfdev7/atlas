@@ -1,6 +1,5 @@
  # Conversions
 
-## Description
 The __Conversions__ module contains basic conversion methods.
 
 Mostly done on the basis of *stud* to *metric* conversion.

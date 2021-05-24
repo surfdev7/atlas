@@ -1,6 +1,5 @@
 # NetMap
 
-### Description
 __NetMaps__ are (nearly) the exact same as regular __Map__ objects, but with replication built in. Making it evermore easier to set up *Shops*, *Inventories*, *etc*... 
 ### Usage
 ```typescript

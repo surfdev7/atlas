@@ -1,6 +1,5 @@
 # Queue
 
-## Description
 __Queue__ is an object allowing for __*sequential*__ processing of entries to avoid errors like *duplication*.
 
 ## Usage

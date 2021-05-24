@@ -1,6 +1,5 @@
 # Motion
 
-## Description
 __Motion__ objects move *Parts* or *Models* to their targets on a frame, by frame basis.
 
 These objects prove extremely versatile at accomplishing their task.
