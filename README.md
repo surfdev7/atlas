@@ -3,6 +3,7 @@
 	<br>
 	Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development. 
 </p>
+
 ## Docs
 Documentation can be found in the [docs](https://github.com/surfdev7/atlas-ts-npm/tree/main/docs) directory.
 
