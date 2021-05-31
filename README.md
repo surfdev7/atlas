@@ -1,4 +1,4 @@
-![logo failed to load.](https://github.com/surfdev7/atlas-ts/blob/main/.github/logo.png)
+![logo failed to load.](.github/logo.png)
 # Atlas-TS
 
 Atlas is library designed to help eliminate the repetitive aspects of Roblox Development.
