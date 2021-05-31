@@ -2,7 +2,7 @@
  * @author surfdev7
  * @description object that processes entries in order.
  */
-class queue<T extends defined> {
+export class Queue<T extends defined> {
 	processor: Callback;
 	list: T[] = [];
 	/**
@@ -37,5 +37,3 @@ class queue<T extends defined> {
 		return this.list.size();
 	}
 }
-
-export = queue;

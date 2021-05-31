@@ -1,7 +1,7 @@
-![logo couldn't load :/](https://github.com/surfdev7/atlas-ts/blob/main/images/ATLAS.png)
+![logo failed to load.](https://github.com/surfdev7/atlas-ts/blob/main/.github/logo.png)
 # Atlas-TS
 
-Atlas is a set of modules designed to help eliminate the repetitive aspects of Roblox Development.
+Atlas is library designed to help eliminate the repetitive aspects of Roblox Development.
 
 ## Docs
 Documentation can be found in the [docs](https://github.com/surfdev7/atlas-ts-npm/tree/main/docs) directory.
@@ -27,7 +27,7 @@ import { <module> } from "@rbxts/atlas"
 - @rbxts/string-utils
 
 ## Contributing
-Something we missed? Just want to contribute?
+Something missing? Just want to contribute?
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 

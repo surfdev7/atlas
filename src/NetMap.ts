@@ -177,6 +177,7 @@ export namespace NetMap {
 			this._map.clear();
 			this.replicateEvent("clear", []);
 		}
+
 		destroy() {
 			this.replicateEvent("destroy");
 			return;

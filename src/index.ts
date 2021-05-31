@@ -1,21 +1,34 @@
-import { eMath } from "./eMath";
+export * from "./NetMap";
 
-import { Format } from "./Format";
+export * from "./Conversions";
 
-import { Model } from "./Model";
+export * from "./Format";
 
-import { Motion } from "./Motion";
+export * from "./Model";
 
-import { NetMap } from "./NetMap";
+export * from "./Motion";
 
-import { Time } from "./Time";
+export * from "./Queue";
 
-import Queue from "./Queue";
+export * from "./eMath";
 
-import Conversions from "./Conversions";
+export * from "./Time";
 
-declare namespace atlas {
-	export { eMath, Format, Model, Motion, NetMap, Time, Queue, Conversions };
-}
+/**
+ * export { NetMap } from "./NetMap";
 
-export = { eMath, Format, Model, Motion, NetMap, Time, Queue, Conversions };
+export { eMath } from "./eMath";
+
+export { Conversions } from "./Conversions";
+
+export { Format } from "./Format";
+
+export { Model } from "./Model";
+
+export { Motion } from "./Motion";
+
+export { Queue } from "./Queue";
+
+export { Time } from "./Time";
+
+ */

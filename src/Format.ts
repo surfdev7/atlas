@@ -3,7 +3,7 @@
  * @description format utils for strings and numbers.
  */
 
-import Conversions from "./Conversions";
+import { Conversions } from "./Conversions";
 
 function pad(num: number, size: number) {
 	let s = num + "";
@@ -11,7 +11,7 @@ function pad(num: number, size: number) {
 	return s;
 }
 
-namespace Format {
+export namespace Format {
 	/**
 	 * returns padded number with decimals. ex: padDecimal(1.18687358, 2) => 1.19
 	 * @param num to be padded.
@@ -82,5 +82,3 @@ namespace Format {
 		})}`;
 	}
 }
-
-export { Format };
