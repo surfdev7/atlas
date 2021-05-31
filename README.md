@@ -1,5 +1,5 @@
 <p align="center">
-	<img src=".github/logo.svg" height="180">
+	<img src=".github/logo.png" height="180">
 	<br>
 	Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development. 
 </p>
