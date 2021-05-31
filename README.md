@@ -28,7 +28,7 @@ import { <module> } from "@rbxts/atlas"
 - @rbxts/string-utils
 
 ## Contributing
-Something missing? Just want to contribute?
+Something wrong? Just want to contribute?
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
