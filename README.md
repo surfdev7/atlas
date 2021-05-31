@@ -1,7 +1,7 @@
 ![logo failed to load.](.github/logo.png)
 # Atlas-TS
 
-Atlas is library designed to help eliminate the repetitive aspects of Roblox Development.
+Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development.
 
 ## Docs
 Documentation can be found in the [docs](https://github.com/surfdev7/atlas-ts-npm/tree/main/docs) directory.
