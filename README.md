@@ -1,4 +1,9 @@
-![logo](.github/logo.png)
+<p align="center">
+	<img src=".github/logo.svg" height="180">
+	<br>
+	Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development. 
+</p>
+
 # Atlas-TS
 
 Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development.
