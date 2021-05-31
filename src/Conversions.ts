@@ -8,7 +8,7 @@ export namespace Conversions {
 		}
 
 		export function studsToKilometers(studs: number) {
-			return studsToMeters(studs) * 1000;
+			return studsToMeters(studs) / 1000;
 		}
 
 		export function studsToMiles(studs: number) {
