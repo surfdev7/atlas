@@ -1,7 +1,7 @@
 {
   "name": "@rbxts/atlas",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.2",
+  "description": "Atlas is a rbxts library designed to help eliminate the repetitive aspects of Roblox Development.",
   "main": "out/init.lua",
   "scripts": {
     "prepublishOnly": "rbxtsc"
