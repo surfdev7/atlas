@@ -7,8 +7,8 @@
     "prepublishOnly": "rbxtsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "surfdev7",
+  "license": "MIT",
   "types": "out/index.d.ts",
   "files": [
     "out"
@@ -33,5 +33,14 @@
     "@rbxts/services": "^1.1.4",
     "@rbxts/signal": "^1.0.3",
     "@rbxts/string-utils": "^1.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surfdev7/atlas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/surfdev7/atlas/issues"
+  },
+  "homepage": "https://github.com/surfdev7/atlas#readme"
+
 }
