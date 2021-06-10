@@ -3,24 +3,24 @@
  * @description NetMap objects allow the replication of a Map from the server to the client. [atlas-NetMap] Use the 'Server' and 'Client' namespaces respectively.
  */
 
-import ClientEvent, { ClientListenerEvent } from "@rbxts/net/out/client/ClientEvent";
+import { ClientListenerEvent } from "@rbxts/net/out/client/ClientEvent";
 import ClientFunction from "@rbxts/net/out/client/ClientFunction";
-import { BidirectionalEventDeclaration, ServerToClientEventDeclaration } from "@rbxts/net/out/definitions/Types";
 import ServerEvent, { ServerSenderEvent } from "@rbxts/net/out/server/ServerEvent";
 import ServerFunction from "@rbxts/net/out/server/ServerFunction";
-import { RunService } from "@rbxts/services";
 import Signal from "@rbxts/signal";
 import Remotes from "./remotes";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const mapCache = new Map<string | number, NetMap.Server<any, any> | NetMap.Client<any, any>>();
+let setup = false;
 
 let transmitter:
 	| ServerSenderEvent<[request: string, netMapId: string | number, data: Map<string, unknown>]>
 	| ClientListenerEvent<[request: string, netMapId: string | number, data: Map<string, unknown>]>;
 
 let connector: ServerFunction | ClientFunction<[request: "connect" | "disconnect", netMapId: string | number], unknown>;
-if (RunService.IsServer()) {
+function serverSetup() {
+	setup = true;
 	connector = Remotes.Server.Create("netMapConnector");
 	transmitter = Remotes.Server.Create("netMapReplicator");
 	// handle client connections
@@ -38,9 +38,12 @@ if (RunService.IsServer()) {
 			}
 		}
 	});
-} else {
-	connector = Remotes.Client.Get("netMapConnector");
+}
+
+function clientSetup() {
+	setup = true;
 	transmitter = Remotes.Client.Get("netMapReplicator");
+	connector = Remotes.Client.Get("netMapConnector");
 
 	transmitter.Connect((request, netMap, data) => {
 		const _map = mapCache.get(tostring(netMap));
@@ -62,7 +65,6 @@ if (RunService.IsServer()) {
 			}
 		});
 	});
-	// handle replications
 }
 
 // TODO implement public type arguments in class for stronger typings.
@@ -95,6 +97,9 @@ export namespace NetMap {
 			>).CallServer("connect", this.mapId);
 		}
 		constructor(mapId: string) {
+			if (!setup) {
+				clientSetup();
+			}
 			this.mapId = mapId;
 			mapCache.set(this.mapId, this);
 			// constructing network connections
@@ -134,6 +139,9 @@ export namespace NetMap {
 		};
 
 		constructor(mapId: string | number, check?: Callback) {
+			if (!setup) {
+				serverSetup();
+			}
 			this.check = check;
 			this.mapId = mapId;
 			mapCache.set(mapId, this);

@@ -58,7 +58,7 @@ export class Motion {
 			}
 
 			// init frame if idle.
-			if (frame.state !== undefined) {
+			if (frame.state === undefined) {
 				// set time stamps
 				frame.start = clockTime;
 				frame.startLocation = currentTargetLocation;
