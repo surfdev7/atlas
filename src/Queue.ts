@@ -18,7 +18,7 @@ export class Queue<T extends defined> {
 	process() {
 		const entry = this.list[1];
 		if (entry) {
-			this.processor();
+			this.processor(entry);
 			this.list.remove(1);
 		}
 	}
