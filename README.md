@@ -22,7 +22,7 @@ import { <module> } from "@rbxts/atlas"
 
 
 ## Dependencies
-- @rbxts/net
+- @rbxts/net (2.1.3) <--- NetMap will fail if not using this version!!
 - @rbxts/services
 - @rbxts/signal
 - @rbxts/string-utils
