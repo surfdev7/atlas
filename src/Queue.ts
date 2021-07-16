@@ -16,10 +16,10 @@ export class Queue<T extends defined> {
 	 * processes next entry.
 	 */
 	process() {
-		const entry = this.list[1];
+		const entry = this.list[0];
 		if (entry) {
 			this.processor(entry);
-			this.list.remove(1);
+			this.list.remove(0);
 		}
 	}
 	/**
