@@ -53,7 +53,6 @@ function clientSetup() {
 
 			const key = packet[0];
 			const value = packet[1];
-
 			if (request === "set") {
 				map._map.set(key, value);
 				map.changed.Fire(key, value);
@@ -103,10 +102,11 @@ export namespace NetMap {
 			this.mapId = mapId;
 			mapCache.set(this.mapId, this);
 			// constructing network connections
-			(connector as ClientFunction<
+			const initData = (connector as ClientFunction<
 				[request: "connect" | "disconnect", netMapId: string | number],
 				undefined
 			>).CallServer("connect", mapId);
+			this._map = (initData as unknown) as Map<t1, t2>;
 		}
 	}
 	/**
@@ -162,13 +162,13 @@ export namespace NetMap {
 				// eslint-disable-next-line roblox-ts/lua-truthiness
 				if (this.check(listener)) {
 					this.listeners.set(listener, true);
-					return true;
+					return this._map;
 				}
 			} else {
 				this.listeners.set(listener, true);
-				return true;
+				return this._map;
 			}
-			return false;
+			return {};
 		}
 
 		set(key: t1, value: t2) {
