@@ -16,7 +16,7 @@ shop.set("potion", 0);
 
 // add more potions to shop.
 while (true) {
-    shop.set("potion", shop.get("potion") + 1);
+    shop.set("potion", (shop.get("potion") as number) + 1);
     wait(1)
 }
 ```
