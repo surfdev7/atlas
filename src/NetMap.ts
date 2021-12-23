@@ -69,11 +69,11 @@ function clientSetup() {
 // TODO implement public type arguments in class for stronger typings.
 export namespace NetMap {
 	export class Client<t1, t2> {
-		_map = new Map();
+		_map = new Map<t1, t2>();
 		private mapId: string;
 
 		public changed = new Signal<(key: t1, value: t2) => void>();
-		public forEach = (i: Callback) => {
+		public forEach = (i: (value?: t2, key?: t1) => void) => {
 			return this._map.forEach(i);
 		};
 		public get = (k: t1) => {
@@ -121,7 +121,7 @@ export namespace NetMap {
 		public changed = new Signal<(key: t1, value: t2) => void>();
 
 		// default map methods
-		public forEach = (i: Callback) => {
+		public forEach = (i: (value?: t2, key?: t1) => void) => {
 			return this._map.forEach(i);
 		};
 
