@@ -73,7 +73,7 @@ export namespace NetMap {
 		private mapId: string;
 
 		public changed = new Signal<(key: t1, value: t2) => void>();
-		public forEach = (i: (value?: t2, key?: t1) => void) => {
+		public forEach = (i: (value: t2, key: t1) => void) => {
 			return this._map.forEach(i);
 		};
 		public get = (k: t1) => {
@@ -121,7 +121,7 @@ export namespace NetMap {
 		public changed = new Signal<(key: t1, value: t2) => void>();
 
 		// default map methods
-		public forEach = (i: (value?: t2, key?: t1) => void) => {
+		public forEach = (i: (value: t2, key: t1) => void) => {
 			return this._map.forEach(i);
 		};
 
