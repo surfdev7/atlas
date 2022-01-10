@@ -3,13 +3,13 @@
  * @description object that processes entries in order.
  */
 export class Queue<T extends defined> {
-	processor: Callback;
+	processor: (entry: T) => void;
 	list: T[] = [];
 	/**
 	 * @param processor synchronous function for processing entires.
 	 * @important DO NOT USE ASYNC PROCESSOR, A YIELDING QUEUE IS FATAL!
 	 */
-	constructor(processor: Callback) {
+	constructor(processor: (entry: T) => void) {
 		this.processor = processor;
 	}
 	/**
@@ -23,7 +23,7 @@ export class Queue<T extends defined> {
 		}
 	}
 	/**
-	 * adds value to back of queue.
+	 * adds entry to back of queue.
 	 * @param value entry.
 	 */
 	push(value: T) {
